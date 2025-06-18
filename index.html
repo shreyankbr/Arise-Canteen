@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Canteen</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="overlay">
+    <nav class="navbar">
+      <h1 class="site-title">COLLEGE CANTEEN</h1>
+      <div class="dropdown">
+        <button class="dropbtn">Login <i class="fas fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#" id="student-login-btn">Student Login</a>
+          <a href="#" id="staff-login-btn">Staff Login</a>
+          <a href="#" id="admin-login-btn">Admin Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="landing-content">
+      <h2>Welcome to College Canteen</h2>
+      <p>Order your favorite food with just a few clicks!</p>
+    </div>
+  </div>
+
+  <!-- Login Modals -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title">Login</h2>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="submit" id="login-submit">Login</button>
+      </form>
+      <p id="login-error" class="error-message"></p>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

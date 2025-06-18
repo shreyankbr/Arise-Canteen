@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UPI Payment</title>
+  <style>
+    body {
+      background: url('ChatGPT Image Apr 10, 2025, 09_14_02 PM.png') no-repeat center center fixed;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .overlay {
+      background-color: rgba(146, 138, 138, 0.575);
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #00000058;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+    }
+
+    .qr {
+      width: 200px;
+      margin: 20px auto;
+    }
+
+    .upi-id {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      background: #21262d;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #ff4757;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #ff6b81;
+    }
+
+    /* ✅ Custom Alert */
+    .custom-alert {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #2ed573;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .custom-alert.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="alert" class="custom-alert">UPI ID copied!</div>
+
+    <h2>Pay with UPI</h2>
+    <div class="qr">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=smartcanteen@upi&pn=Smart%20Canteen&am=50&cu=INR&size=200x200"
+        alt="UPI QR Code">
+    </div>
+    <div class="upi-id">
+      UPI ID: <strong>smartcanteen@upi</strong>
+    </div>
+    <button onclick="copyUPI()">Copy UPI ID</button>
+  </div>
+
+  <script>
+    function copyUPI() {
+      navigator.clipboard.writeText("smartcanteen@upi");
+      const alertBox = document.getElementById("alert");
+      alertBox.classList.add("show");
+
+      // Hide after 2 seconds
+      setTimeout(() => {
+        alertBox.classList.remove("show");
+      }, 2000);
+    }
+
+    function payNow() {
+      window.location.href = "upi://pay?pa=smartcanteen@upi&pn=Smart%20Canteen&am=50&cu=INR";
+    }
+  </script>
+
+</body>
+
+</html>
