@@ -7,7 +7,7 @@ Arise Canteen is a comprehensive web-based platform that digitizes the college c
 - 🍽️ **Multi-User System**: Separate interfaces for Students, Staff, and Administrators
 - 📱 **Responsive Design**: Works on desktop and mobile devices
 - 🛒 **Shopping Cart**: Add/remove items and adjust quantities before checkout
-- 💳 **UPI Payment Integration**: Secure payment processing via UPI
+- 💳 **UPI Payment Integration**: Secure payment processing via UPI **(Placeholder for furthur development)**
 - 📊 **Real-time Order Tracking**: View order status updates (Pending → Preparing → Ready)
 - 👨‍💼 **Admin Dashboard**: Full control over menu, users, and inventory
 - 🔐 **Role-Based Access**: Secure authentication with Firebase
@@ -15,7 +15,7 @@ Arise Canteen is a comprehensive web-based platform that digitizes the college c
 ## Technology Stack
 
 ### Frontend
-- HTML5, CSS3, JavaScript
+- HTML, CSS, JavaScript
 - Firebase Authentication
 - Firebase Realtime Database
 - Font Awesome Icons
@@ -25,10 +25,6 @@ Arise Canteen is a comprehensive web-based platform that digitizes the college c
 - Firebase SDK
 - Firebase Authentication
 - Firebase Realtime Database
-
-### Payment Integration
-- UPI payment gateway
-- QR code generation
 
 ## User Roles
 
