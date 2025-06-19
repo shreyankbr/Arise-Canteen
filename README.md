@@ -124,8 +124,7 @@ Arise Canteen is a comprehensive web-based platform that digitizes the college c
 2. Browse the menu by category
 3. Add items to cart
 4. Proceed to checkout
-5. Pay via UPI
-6. Track order status in "My Orders"
+5. Track order status in "My Orders"
 
 ### For Staff
 1. Login with staff credentials
