@@ -144,16 +144,13 @@ Arise Canteen is a comprehensive web-based platform that digitizes the college c
 
 ## Limitations
 
-- Currently supports only UPI payments
+- UPI payments does not work as it is not integrated
 - No native mobile app (web-only)
 - Limited to single canteen management
-- No inventory tracking system
 
 ## Future Enhancements
 
 - Add cash payment option
-- Implement loyalty/rewards program
-- Expand to multiple canteens/locations
 - Add dietary filters (vegetarian, vegan, etc.)
 - Include food ratings and reviews
 - Push notifications for order updates
