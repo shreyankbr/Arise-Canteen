@@ -138,4 +138,30 @@ Arise Canteen is a comprehensive web-based platform that digitizes the college c
 3. Manage user accounts
 4. View system-wide order data
 
-## File Structure
+
+## Security Considerations
+
+- All passwords are securely hashed using Firebase Authentication
+- Users can only access features appropriate for their role
+- Admin functions require re-authentication for sensitive operations
+- Database rules should be configured to prevent unauthorized access
+
+## Limitations
+
+- Currently supports only UPI payments
+- No native mobile app (web-only)
+- Limited to single canteen management
+- No inventory tracking system
+
+## Future Enhancements
+
+- Add cash payment option
+- Implement loyalty/rewards program
+- Expand to multiple canteens/locations
+- Add dietary filters (vegetarian, vegan, etc.)
+- Include food ratings and reviews
+- Push notifications for order updates
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
